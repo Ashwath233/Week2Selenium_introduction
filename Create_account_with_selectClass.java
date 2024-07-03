@@ -41,6 +41,7 @@ public class Create_account_with_selectClass {
 		WebElement State1 = driver.findElement(By.name("generalStateProvinceGeoId"));
 		Select State2 = new Select(State1);
 		State2.selectByValue("TX");
+		
 		driver.findElement(By.className("smallSubmit")).click();
 		Thread.sleep(2000);
 		driver.close();
